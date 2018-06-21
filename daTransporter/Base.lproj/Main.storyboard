@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,61 +15,70 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daTransporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoryBg" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-uH-ScL">
-                                <rect key="frame" x="0.0" y="0.0" width="281" height="556"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginImg" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-Ob-NRX">
-                                <rect key="frame" x="95" y="139" width="131" height="70"/>
+                                <rect key="frame" x="95" y="139" width="225" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="mLO-3A-C1x"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-w5-9hv">
-                                <rect key="frame" x="20" y="27" width="281" height="83"/>
+                                <rect key="frame" x="20" y="27" width="375" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="aTS-dV-7Yd"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-lr-03z">
-                                <rect key="frame" x="63.5" y="329" width="194" height="106"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-V5-L20" customClass="RoundButton" customModule="daTransporter" customModuleProvider="target">
+                                <rect key="frame" x="101" y="227" width="212" height="67"/>
+                                <color key="backgroundColor" red="0.26465212866739107" green="0.76764162202673425" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="20" height="-20"/>
+                                <state key="normal" image="senderButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-lr-03z" customClass="RoundButton" customModule="daTransporter" customModuleProvider="target">
+                                <rect key="frame" x="100" y="358" width="215" height="71"/>
+                                <color key="backgroundColor" red="0.26465212869999999" green="0.76764162199999997" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="1xl-IS-Xvd"/>
+                                    <constraint firstAttribute="height" constant="71" id="1xl-IS-Xvd"/>
+                                    <constraint firstAttribute="width" constant="215" id="Cwo-cZ-QSm"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="tintColor" red="0.95620218069999996" green="0.9364901672" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <size key="titleShadowOffset" width="6" height="9"/>
                                 <state key="normal" image="transButton"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-V5-L20">
-                                <rect key="frame" x="108" y="228" width="105" height="106"/>
-                                <accessibility key="accessibilityConfiguration">
-                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
-                                </accessibility>
-                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="a0B-rj-cTz"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <size key="titleShadowOffset" width="6" height="9"/>
-                                <state key="normal" image="senderButton"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="NYS-V5-L20" firstAttribute="leading" secondItem="DzV-Ob-NRX" secondAttribute="leading" constant="13" id="2u7-EE-kgi"/>
+                            <constraint firstItem="NYS-V5-L20" firstAttribute="leading" secondItem="DzV-Ob-NRX" secondAttribute="leading" constant="6" id="2u7-EE-kgi"/>
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Lz-e2-DWk"/>
                             <constraint firstItem="DzV-Ob-NRX" firstAttribute="top" secondItem="Zfa-w5-9hv" secondAttribute="bottom" constant="29" id="5bn-HU-Ae3"/>
                             <constraint firstItem="DzV-Ob-NRX" firstAttribute="centerX" secondItem="Zfa-w5-9hv" secondAttribute="centerX" id="7SE-pW-CaX"/>
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="centerX" secondItem="Zfa-w5-9hv" secondAttribute="centerX" constant="-20" id="L9P-bA-ZNC"/>
-                            <constraint firstItem="KYH-lr-03z" firstAttribute="top" secondItem="NYS-V5-L20" secondAttribute="top" constant="101" id="OmQ-kk-0Qa"/>
-                            <constraint firstItem="NYS-V5-L20" firstAttribute="top" secondItem="DzV-Ob-NRX" secondAttribute="bottom" constant="19" id="Tv8-hb-U4S"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="top" secondItem="NYS-V5-L20" secondAttribute="top" constant="131" id="OmQ-kk-0Qa"/>
+                            <constraint firstItem="NYS-V5-L20" firstAttribute="top" secondItem="DzV-Ob-NRX" secondAttribute="bottom" constant="18" id="Tv8-hb-U4S"/>
                             <constraint firstItem="NYS-V5-L20" firstAttribute="centerX" secondItem="DzV-Ob-NRX" secondAttribute="centerX" id="VAD-LB-feF"/>
                             <constraint firstItem="Zfa-w5-9hv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Wb1-fe-vGi"/>
                             <constraint firstItem="DzV-Ob-NRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="dIQ-c0-yAn"/>
@@ -77,23 +86,23 @@
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-19.5" id="ho0-p5-RSm"/>
                             <constraint firstItem="Zfa-w5-9hv" firstAttribute="trailing" secondItem="Yfz-uH-ScL" secondAttribute="trailing" constant="20" id="oZz-dm-I5j"/>
                             <constraint firstAttribute="trailing" secondItem="Zfa-w5-9hv" secondAttribute="trailing" constant="19" id="t0u-30-q1h"/>
-                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerY" secondItem="NYS-V5-L20" secondAttribute="centerY" constant="101" id="toL-Wi-7bc"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerY" secondItem="NYS-V5-L20" secondAttribute="centerY" constant="133" id="toL-Wi-7bc"/>
                             <constraint firstItem="Zfa-w5-9hv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="v5W-Io-eEG"/>
-                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerX" secondItem="NYS-V5-L20" secondAttribute="centerX" id="wfq-2L-nV2"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerX" secondItem="NYS-V5-L20" secondAttribute="centerX" constant="0.5" id="wfq-2L-nV2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="14.492753623188406" y="24.456521739130437"/>
+            <point key="canvasLocation" x="12" y="22.906403940886701"/>
         </scene>
     </scenes>
     <resources>
         <image name="StoryBg" width="1997" height="997"/>
         <image name="appName" width="450" height="142"/>
-        <image name="loginImg" width="130" height="41"/>
-        <image name="senderButton" width="110" height="43"/>
-        <image name="transButton" width="194" height="43"/>
+        <image name="loginImg" width="126" height="37"/>
+        <image name="senderButton" width="104" height="37"/>
+        <image name="transButton" width="187" height="37"/>
     </resources>
 </document>

@@ -17,7 +17,7 @@ import UIKit
     }
     
     required init?(coder aDecoder: NSCoder) {
-        super.init(frame: <#T##CGRect#>)
+        super.init(coder: aDecoder)
         sharedInit()
     }
     
@@ -29,8 +29,13 @@ import UIKit
         refreshCorners(value: cornerRadius)
     }
     
+    //Change the corner and set the shadow
     func refreshCorners(value: CGFloat){
         layer.cornerRadius = value
+        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowOpacity = 1
+        layer.shadowOffset = CGSize.zero
+        layer.shadowRadius = 15
     }
     
     @IBInspectable var cornerRadius: CGFloat = 15 {
@@ -38,4 +43,6 @@ import UIKit
             refreshCorners(value: cornerRadius)
         }
     }
+    
+    
 }
