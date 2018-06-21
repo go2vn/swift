@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,54 +15,85 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daTransporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPlane" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-uH-ScL">
-                                <rect key="frame" x="-39" y="0.0" width="453" height="812"/>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPlane" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-uH-ScL">
+                                <rect key="frame" x="0.0" y="0.0" width="281" height="556"/>
+                            </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginImg" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-Ob-NRX">
+                                <rect key="frame" x="95" y="139" width="131" height="70"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="mLO-3A-C1x"/>
+                                </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-w5-9hv">
-                                <rect key="frame" x="0.0" y="69" width="414" height="83"/>
+                                <rect key="frame" x="20" y="27" width="281" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="aTS-dV-7Yd"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appSlogan" translatesAutoresizingMaskIntoConstraints="NO" id="3hM-c0-9dp">
-                                <rect key="frame" x="0.0" y="591" width="414" height="40"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-lr-03z">
+                                <rect key="frame" x="64" y="329" width="194" height="106"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="QIh-Gf-4xA"/>
+                                    <constraint firstAttribute="height" constant="106" id="1xl-IS-Xvd"/>
                                 </constraints>
-                            </imageView>
-                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zw0-T2-9Pi">
-                                <rect key="frame" x="0.0" y="169" width="414" height="162"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            </pickerView>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.95620218069999996" green="0.9364901672" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="6" height="9"/>
+                                <state key="normal" image="transButton"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-V5-L20">
+                                <rect key="frame" x="108" y="228" width="105" height="106"/>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
+                                </accessibility>
+                                <rect key="contentStretch" x="1" y="1" width="1" height="1"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="106" id="a0B-rj-cTz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="tintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="titleShadowOffset" width="6" height="9"/>
+                                <state key="normal" image="senderButton"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="NYS-V5-L20" firstAttribute="leading" secondItem="DzV-Ob-NRX" secondAttribute="leading" constant="13" id="2u7-EE-kgi"/>
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3Lz-e2-DWk"/>
-                            <constraint firstItem="3hM-c0-9dp" firstAttribute="centerX" secondItem="Zfa-w5-9hv" secondAttribute="centerX" id="CxC-Rj-crw"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3hM-c0-9dp" secondAttribute="bottom" constant="105" id="JAH-nm-wuT"/>
-                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="trailing" secondItem="3hM-c0-9dp" secondAttribute="trailing" id="LAy-xi-DSF"/>
-                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="leading" secondItem="3hM-c0-9dp" secondAttribute="leading" id="S8Q-Ci-Koq"/>
-                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Wb1-fe-vGi"/>
+                            <constraint firstItem="DzV-Ob-NRX" firstAttribute="top" secondItem="Zfa-w5-9hv" secondAttribute="bottom" constant="29" id="5bn-HU-Ae3"/>
+                            <constraint firstItem="DzV-Ob-NRX" firstAttribute="centerX" secondItem="Zfa-w5-9hv" secondAttribute="centerX" id="7SE-pW-CaX"/>
+                            <constraint firstItem="Yfz-uH-ScL" firstAttribute="centerX" secondItem="Zfa-w5-9hv" secondAttribute="centerX" constant="-20" id="L9P-bA-ZNC"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="top" secondItem="NYS-V5-L20" secondAttribute="top" constant="101" id="OmQ-kk-0Qa"/>
+                            <constraint firstItem="NYS-V5-L20" firstAttribute="top" secondItem="DzV-Ob-NRX" secondAttribute="bottom" constant="19" id="Tv8-hb-U4S"/>
+                            <constraint firstItem="NYS-V5-L20" firstAttribute="centerX" secondItem="DzV-Ob-NRX" secondAttribute="centerX" id="VAD-LB-feF"/>
+                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Wb1-fe-vGi"/>
+                            <constraint firstItem="DzV-Ob-NRX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="dIQ-c0-yAn"/>
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="28" id="dkU-h3-PuT"/>
                             <constraint firstItem="Yfz-uH-ScL" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-19.5" id="ho0-p5-RSm"/>
-                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="trailing" secondItem="Yfz-uH-ScL" secondAttribute="trailing" id="oZz-dm-I5j"/>
-                            <constraint firstAttribute="trailing" secondItem="Zfa-w5-9hv" secondAttribute="trailing" id="t0u-30-q1h"/>
-                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="49" id="v5W-Io-eEG"/>
+                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="trailing" secondItem="Yfz-uH-ScL" secondAttribute="trailing" constant="20" id="oZz-dm-I5j"/>
+                            <constraint firstAttribute="trailing" secondItem="Zfa-w5-9hv" secondAttribute="trailing" constant="19" id="t0u-30-q1h"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerY" secondItem="NYS-V5-L20" secondAttribute="centerY" constant="101" id="toL-Wi-7bc"/>
+                            <constraint firstItem="Zfa-w5-9hv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="7" id="v5W-Io-eEG"/>
+                            <constraint firstItem="KYH-lr-03z" firstAttribute="centerX" secondItem="NYS-V5-L20" secondAttribute="centerX" id="wfq-2L-nV2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="17.39130434782609" y="26.086956521739133"/>
+            <point key="canvasLocation" x="14.492753623188406" y="24.456521739130437"/>
         </scene>
     </scenes>
     <resources>
         <image name="appName" width="450" height="142"/>
-        <image name="appSlogan" width="529" height="57"/>
         <image name="bgPlane" width="450" height="450"/>
+        <image name="loginImg" width="130" height="41"/>
+        <image name="senderButton" width="110" height="43"/>
+        <image name="transButton" width="194" height="43"/>
     </resources>
 </document>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina3_5" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -17,24 +17,24 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPlane" translatesAutoresizingMaskIntoConstraints="NO" id="yYf-Pc-cD2">
-                                <rect key="frame" x="-122" y="-161" width="450" height="812"/>
+                                <rect key="frame" x="-75" y="-33" width="450" height="812"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="812" id="Eio-1g-LzN"/>
                                     <constraint firstAttribute="width" secondItem="yYf-Pc-cD2" secondAttribute="height" multiplier="9:16" constant="-6.75" id="WIO-67-unA"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="eRz-sE-wxx">
-                                <rect key="frame" x="32" y="47" width="264" height="78"/>
+                                <rect key="frame" x="36" y="47.000000000000007" width="350" height="97.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="eRz-sE-wxx" secondAttribute="height" multiplier="375:86" constant="-76.32558139534882" id="Hva-9S-z3y"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appSlogan" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-kQ-qka">
-                                <rect key="frame" x="32" y="338" width="264" height="78"/>
+                                <rect key="frame" x="36" y="574.33333333333337" width="350" height="97.666666666666629"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="MVn-kQ-qka" secondAttribute="height" multiplier="375:86" constant="-76.32558139534882" id="mbF-pg-3he"/>
                                 </constraints>
@@ -62,7 +62,7 @@
     </scenes>
     <resources>
         <image name="appName" width="450" height="142"/>
-        <image name="appSlogan" width="279" height="40"/>
+        <image name="appSlogan" width="529" height="57"/>
         <image name="bgPlane" width="450" height="450"/>
     </resources>
 </document>
