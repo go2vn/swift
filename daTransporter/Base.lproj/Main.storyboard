@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,26 +15,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="daTransporter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clearsContextBeforeDrawing="NO" userInteractionEnabled="NO" alpha="0.65000000000000002" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="StoryBg" translatesAutoresizingMaskIntoConstraints="NO" id="Yfz-uH-ScL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <rect key="frame" x="0.0" y="0.0" width="336" height="743"/>
                             </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginImg" translatesAutoresizingMaskIntoConstraints="NO" id="DzV-Ob-NRX">
-                                <rect key="frame" x="95" y="139" width="225" height="70"/>
+                                <rect key="frame" x="95" y="139" width="186" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="mLO-3A-C1x"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="Zfa-w5-9hv">
-                                <rect key="frame" x="20" y="27" width="375" height="83"/>
+                                <rect key="frame" x="20" y="27" width="336" height="83"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="83" id="aTS-dV-7Yd"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYS-V5-L20" customClass="RoundButton" customModule="daTransporter" customModuleProvider="target">
-                                <rect key="frame" x="101" y="227" width="212" height="67"/>
+                                <rect key="frame" x="101" y="227" width="173" height="67"/>
                                 <color key="backgroundColor" red="0.26465212866739107" green="0.76764162202673425" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
@@ -50,7 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                             </button>
                             <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYH-lr-03z" customClass="RoundButton" customModule="daTransporter" customModuleProvider="target">
-                                <rect key="frame" x="100" y="358" width="215" height="71"/>
+                                <rect key="frame" x="81" y="358" width="215" height="71"/>
                                 <color key="backgroundColor" red="0.26465212869999999" green="0.76764162199999997" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" button="YES" playsSound="YES"/>
@@ -101,8 +101,8 @@
     <resources>
         <image name="StoryBg" width="1997" height="997"/>
         <image name="appName" width="450" height="142"/>
-        <image name="loginImg" width="126" height="37"/>
-        <image name="senderButton" width="104" height="37"/>
-        <image name="transButton" width="187" height="37"/>
+        <image name="loginImg" width="130" height="41"/>
+        <image name="senderButton" width="110" height="43"/>
+        <image name="transButton" width="194" height="43"/>
     </resources>
 </document>
