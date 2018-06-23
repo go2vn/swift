@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,49 +19,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPlane" translatesAutoresizingMaskIntoConstraints="NO" id="yYf-Pc-cD2">
-                                <rect key="frame" x="-75" y="-33" width="450" height="812"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bgPlane" translatesAutoresizingMaskIntoConstraints="NO" id="t79-ew-Qik">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="1g0-bn-dC3">
+                                <rect key="frame" x="69" y="65" width="276" height="83"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="812" id="Eio-1g-LzN"/>
-                                    <constraint firstAttribute="width" secondItem="yYf-Pc-cD2" secondAttribute="height" multiplier="9:16" constant="-6.75" id="WIO-67-unA"/>
+                                    <constraint firstAttribute="width" secondItem="1g0-bn-dC3" secondAttribute="height" multiplier="276:83" id="IEd-5e-SEx"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appName" translatesAutoresizingMaskIntoConstraints="NO" id="eRz-sE-wxx">
-                                <rect key="frame" x="36" y="47.000000000000007" width="350" height="97.666666666666686"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appSlogan" translatesAutoresizingMaskIntoConstraints="NO" id="7Sa-4v-jCS">
+                                <rect key="frame" x="45" y="566" width="325" height="49"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="eRz-sE-wxx" secondAttribute="height" multiplier="375:86" constant="-76.32558139534882" id="Hva-9S-z3y"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appSlogan" translatesAutoresizingMaskIntoConstraints="NO" id="MVn-kQ-qka">
-                                <rect key="frame" x="36" y="574.33333333333337" width="350" height="97.666666666666629"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="MVn-kQ-qka" secondAttribute="height" multiplier="375:86" constant="-76.32558139534882" id="mbF-pg-3he"/>
+                                    <constraint firstAttribute="height" constant="49" id="Z8K-lI-6g0"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="MVn-kQ-qka" firstAttribute="leading" secondItem="eRz-sE-wxx" secondAttribute="leading" id="Aga-qu-TUQ"/>
-                            <constraint firstItem="MVn-kQ-qka" firstAttribute="width" secondItem="MVn-kQ-qka" secondAttribute="height" multiplier="375:86" constant="-76.32558139534882" id="Kn2-Ye-Ko7"/>
-                            <constraint firstItem="eRz-sE-wxx" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="16" id="PNj-dt-cWe"/>
-                            <constraint firstItem="yYf-Pc-cD2" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-5" id="VVD-5t-iOr"/>
-                            <constraint firstItem="eRz-sE-wxx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="VXY-Jj-lPr"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MVn-kQ-qka" secondAttribute="bottom" constant="64" id="luw-xx-fBf"/>
-                            <constraint firstItem="yYf-Pc-cD2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" constant="-57" id="ttq-9h-l98"/>
-                            <constraint firstItem="eRz-sE-wxx" firstAttribute="centerX" secondItem="yYf-Pc-cD2" secondAttribute="centerX" constant="61.5" id="xeI-sx-tuh"/>
-                            <constraint firstItem="MVn-kQ-qka" firstAttribute="trailing" secondItem="eRz-sE-wxx" secondAttribute="trailing" id="xlB-ur-q8w"/>
+                            <constraint firstItem="7Sa-4v-jCS" firstAttribute="centerX" secondItem="1g0-bn-dC3" secondAttribute="centerX" id="0Xc-pB-2iN"/>
+                            <constraint firstItem="t79-ew-Qik" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="76" id="7aT-u6-fgP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Sa-4v-jCS" secondAttribute="bottom" constant="121" id="Cht-u7-bAl"/>
+                            <constraint firstItem="7Sa-4v-jCS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="GwR-DN-bNv"/>
+                            <constraint firstItem="t79-ew-Qik" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" constant="-39" id="KuG-17-DEM"/>
+                            <constraint firstItem="t79-ew-Qik" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="ZNa-BE-DoQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1g0-bn-dC3" secondAttribute="trailing" constant="69" id="dDh-HF-phc"/>
+                            <constraint firstItem="t79-ew-Qik" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="i5t-uu-zau"/>
+                            <constraint firstItem="1g0-bn-dC3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="69" id="kI0-Bs-Eff"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Sa-4v-jCS" secondAttribute="trailing" constant="44" id="yVY-0N-vDT"/>
+                            <constraint firstItem="1g0-bn-dC3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="zFl-0E-NOm"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="42.399999999999999" y="369.45812807881777"/>
+            <point key="canvasLocation" x="40.579710144927539" y="368.47826086956525"/>
         </scene>
     </scenes>
     <resources>
         <image name="appName" width="450" height="142"/>
         <image name="appSlogan" width="529" height="57"/>
-        <image name="bgPlane" width="450" height="450"/>
+        <image name="bgPlane" width="960" height="640"/>
     </resources>
 </document>
