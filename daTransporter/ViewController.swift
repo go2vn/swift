@@ -22,5 +22,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    //Back function to the previous screen
+    @IBAction func backToPreviousScreen(seque: UIStoryboardSegue){
+        
+        
+    }
+    
 }
 
