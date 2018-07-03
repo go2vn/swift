@@ -24,8 +24,7 @@ class ViewController: UIViewController {
     
     //Back function to the previous screen
     @IBAction func backToPreviousScreen(seque: UIStoryboardSegue){
-        
-        
+                
     }
     
 }

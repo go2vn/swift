@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA11149120EB9D6F002A4FC2 /* SignUpVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11149020EB9D6F002A4FC2 /* SignUpVC.swift */; };
+		FA11149320EB9DE1002A4FC2 /* SenderListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11149220EB9DE1002A4FC2 /* SenderListVC.swift */; };
+		FA11149520EB9E00002A4FC2 /* TransporterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11149420EB9E00002A4FC2 /* TransporterListVC.swift */; };
 		FA45E47920DB6947002A9EE3 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA45E47820DB6947002A9EE3 /* RoundButton.swift */; };
 		FADC9D0A20D0DCF800988A1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC9D0920D0DCF800988A1E /* AppDelegate.swift */; };
 		FADC9D0C20D0DCF800988A1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FADC9D0B20D0DCF800988A1E /* ViewController.swift */; };
@@ -16,6 +19,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA11149020EB9D6F002A4FC2 /* SignUpVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpVC.swift; sourceTree = "<group>"; };
+		FA11149220EB9DE1002A4FC2 /* SenderListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderListVC.swift; sourceTree = "<group>"; };
+		FA11149420EB9E00002A4FC2 /* TransporterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransporterListVC.swift; sourceTree = "<group>"; };
 		FA45E47820DB6947002A9EE3 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		FADC9D0620D0DCF800988A1E /* daTransporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = daTransporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FADC9D0920D0DCF800988A1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +69,9 @@
 				FA45E47820DB6947002A9EE3 /* RoundButton.swift */,
 				FADC9D1220D0DCFA00988A1E /* LaunchScreen.storyboard */,
 				FADC9D1520D0DCFA00988A1E /* Info.plist */,
+				FA11149020EB9D6F002A4FC2 /* SignUpVC.swift */,
+				FA11149220EB9DE1002A4FC2 /* SenderListVC.swift */,
+				FA11149420EB9E00002A4FC2 /* TransporterListVC.swift */,
 			);
 			path = daTransporter;
 			sourceTree = "<group>";
@@ -138,8 +147,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA11149120EB9D6F002A4FC2 /* SignUpVC.swift in Sources */,
 				FA45E47920DB6947002A9EE3 /* RoundButton.swift in Sources */,
 				FADC9D0C20D0DCF800988A1E /* ViewController.swift in Sources */,
+				FA11149520EB9E00002A4FC2 /* TransporterListVC.swift in Sources */,
+				FA11149320EB9DE1002A4FC2 /* SenderListVC.swift in Sources */,
 				FADC9D0A20D0DCF800988A1E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
